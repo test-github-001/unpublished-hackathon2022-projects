@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+.header {
+	background: #093850;
+	width: 100%;
+	height: 144px;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu {
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-menu li {
+	display: inline-block;
+	margin-left: 120px;
+}
+
+.navbar-menu li a {
+	position: relative;
+	cursor: pointer;
+	line-height: 1;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.navbar-menu li a:hover {
+	color: #AFEEEE;
+	transition: 0.6s ease-out;
+}
+.navbar-menu li a:after {
+	display: block;
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #AFEEEE;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.navbar-menu li a:hover:after,
+.navbar-menu li a:focus:after {
+	width: 100%;
+}
+
+.planet:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/3594/3594083.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}
+
+.constellation:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/3049/3049592.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}
+
+.asteroid:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/8966/8966608.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}
+
+.wrapper__space {
+	background: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1807/Look-earth-from-the-moon_1920x1200.jpg) no-repeat;
+	background-size: cover;
+	z-index: -100;
+	min-height: calc(100vh - 144px);
+}
+
+.space__info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.space__info img {
+	box-sizing: border-box;
+	display: block;
+
+}
+
+.info__space {
+	width: 700px;
+	margin-top: 120px;
+	padding: 30px;
+	border: 1px solid black;
+	max-height: 450px;
+	background: rgba(0, 0, 0, 0.3);
+	position: relative;
+} 
+
+.test_input {
+	position: absolute;
+	bottom: 35px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid black;
+	padding: 9px;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.test_input:hover {
+	background-color: rgba(9, 56, 80, 0.8);
+	transition: 0.5s;
+}
+
+.info__space p {
+	width: 100%;
+	color: #fff;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.wrapper__planet {
+	background-color: #1a1919;
+	padding-top: 50px;
+	box-shadow: -0px -10px 20px #1a1919;
+	padding-bottom: 20px;
+}
+
+.info__earth,
+.info__mercury,
+.info__venus,
+.info__mars,
+.info__jupiter,
+.info__saturn,
+.info__uranus,
+.info__neptune {
+	width: 800px;
+}
+
+
+.planet__earth {
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.title__planet {
+	text-align: center;
+	color: #fff;
+	font-size: 55px;
+	font-weight: bold;
+}
+.planet__info {
+	color: #fff;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.planet__mercury, .planet__venus, .planet__mars, .planet__mars, .planet__jupiter, .planet__saturn, .planet__uranus, .planet__neptune  {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper__constellation {
+	background: url(https://damion.club/uploads/posts/2022-01/thumbs/1642186198_47-damion-club-p-chernii-fon-kosmos-48.png) no-repeat;
+	background-size: cover;
+	min-height: calc(100vh);
+}
+
+.constellation_info,
+.ursamajor_info,
+.orion_info {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.constellation_title {
+	color: #fff;
+	font-size: 45px;
+	font-weight: bold;
+}
+.additional_info {
+	width: 600px;
+}
+.additional_info p{
+	color: #fff;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.wrapper__asteroid {
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.info__ceres, .info__vesta, .info__pallada, .info__psyche, .info__interamnia, .info__hygiea{
+	width: 800px;
+}
+.asteroid__ceres, .asteroid__vesta, .asteroid__pallada, .asteroid__psyche, .asteroid__interamnia, .asteroid__hygiea {
+	display: flex;
+	justify-content: space-between;
+}
+.title__asteroid {
+	text-align: center;
+	color: #fff;
+	font-size: 55px;
+	font-weight: bold;
+}
+.asteroid__info {
+	color: #fff;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.footer {
+	padding: 70px;
+	background-color: #093850;
+}
+.wrapper__footer {
+	display: flex;
+}
+.hackathon_project {
+	width: 550px;
+}
+.project_title {
+	font-size: 26px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.project_description {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.nav_footer {
+	margin-left: 150px;
+}
+
+.menu_title {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.navbar_menu_footer li a{
+	text-decoration: none;
+	color: #0066ba;
+	font-weight: 300;
+}
+
+.contacts {
+	margin-left: 150px;
+}
+
+.vk:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/39/39699.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}
+
+.phone:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/597/597177.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}
+
+.mail:before {
+	content: url(https://cdn-icons-png.flaticon.com/24/542/542689.png);
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
+}

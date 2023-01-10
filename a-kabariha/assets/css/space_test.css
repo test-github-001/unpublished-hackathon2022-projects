@@ -1,0 +1,82 @@
+body {
+    background-color: #f0ebf8;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.main {
+    margin: auto;
+    max-width: 90vw;
+    width: 680px;
+}
+.info-window, .space-test {
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 24px;
+    padding-top: 22px;
+    position: relative;
+}
+.info__test, .wrapper-space-test {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.test-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 24pt;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-top: 20px;
+}
+
+input {
+    margin: 5px;
+}
+textarea {
+    resize: none;
+}
+
+.check {
+    background-color: black;
+}
+
+input[type="button"],
+input[type="reset"] {
+    transition: box-shadow 280ms cubic-bezier(0.4,0,0.2,1);
+    transition: background  0.5s;
+    border: 0;
+    border-radius: 4px;
+    color: rgb(128, 90, 153);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: none;
+    min-width: auto;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #093850;
+    color: #fff;
+}

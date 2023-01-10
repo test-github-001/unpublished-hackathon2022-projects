@@ -1,0 +1,166 @@
+@media (max-width: 375px) and (max-width:  833px){
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 95%;
+    z-index:2;
+    overflow: hidden;
+  }
+
+  .menu-btn span {
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+  }
+
+  .menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+  .menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+
+  /* Меняем гамбургер иконку, когда меню открыто */
+  .menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+  }
+
+  /* Меню, которое будет появляться */
+  .menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #093850;
+    transform: translateX(100%);
+    transition: transform 0.5s; 
+  }
+
+  .menu li {
+    position: relative;
+    top: 10px;
+    left: -100px;
+    padding-bottom: 20px;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+    z-index: 1;
+  }
+
+  .menu li {
+    list-style-type: none;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .logo {
+    width: 80%;
+    height: 80%;
+    margin-right: 50px;
+  }
+
+  .space__info img {
+    display: none;
+  }
+  .info__space p{
+    font-size: 20px;
+  }
+  .test_input {
+    font-size: 15px;
+    bottom: -60px;
+    left: 0px;
+  }
+  .info__planet img{
+    width: 170px;
+    height: 170px;
+    display: none;
+  }
+  .title__planet {
+    font-size: 26px;
+  }
+  .planet__info {
+    font-size: 15px;
+  }
+  .additional_info {
+    display: none;
+  }
+  .info__asteroid img{
+    width: 170px;
+    height: 170px;
+    display: none;
+  }
+  .title__asteroid {
+    font-size: 26px;
+  }
+  .asteroid__info {
+    font-size: 15px;
+  }
+
+  .footer {
+    padding: 20px;
+    background-color: #093850;
+  }
+  .wrapper__footer {
+    display: block;
+  }
+  .hackathon_project {
+    width: 100%;
+  }
+  .project_title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .project_description {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .menu_title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .contacts, .nav_footer {
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .navbar_menu_footer li a{
+    text-decoration: none;
+    color: #0066ba;
+    font-weight: 300;
+  }
+  textarea {
+    resize: none;
+  }
+  textarea[type="texrarea-width"] {
+    width: 90%;
+  }
+  .wrapper__space {
+    background: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1807/Look-earth-from-the-moon_1920x1200.jpg) no-repeat;
+    background-size: cover;
+    z-index: -100;
+    min-height: calc(100vh - 144px);
+  }
+}
