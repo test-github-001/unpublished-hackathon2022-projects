@@ -92,7 +92,7 @@ body {
 }
 
 .wrapper__space {
-	background: url(./assets/img/background-space.jpg) no-repeat;
+	background: url(../img/background-space.jpg) no-repeat;
 	background-size: cover;
 	z-index: -100;
 	min-height: calc(100vh - 144px);
