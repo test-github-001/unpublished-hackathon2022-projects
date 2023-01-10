@@ -92,7 +92,7 @@ body {
 }
 
 .wrapper__space {
-	background: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1807/Look-earth-from-the-moon_1920x1200.jpg) no-repeat;
+	background: url(./assets/img/background-space.jpg) no-repeat;
 	background-size: cover;
 	z-index: -100;
 	min-height: calc(100vh - 144px);
